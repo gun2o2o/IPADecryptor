@@ -103,8 +103,8 @@ Sources/IPAAppStore/
 - Outputs decrypted IPA to user-configured workspace directory
 
 ### Known Limitations
+- **App Store sign-in requires VM HWID modification** — The virtual iPhone's default serial number / model number do not pass Apple's activation check. You must manually patch `DeviceTreePatcher.swift` in the vphone-cli source with valid device identifiers (serial number, model number, etc.) before building. This step is **not included** in this repository for legal reasons.
 - `pymobiledevice3` restore crashes with Python 3.12 (use system Python 3.9)
-- Apple ID sign-in may fail in VM (serial number mismatch with Apple's activation servers)
 - First boot after CFW install causes kernel panic (expected, auto-handled)
 - VM requires SIP disabled and AMFI boot-arg set
 

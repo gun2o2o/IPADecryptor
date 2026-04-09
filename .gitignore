@@ -6,3 +6,4 @@ vphone/
 frida-ios-dump/
 *.ipa
 .claude/
+SETUP_GUIDE.md
