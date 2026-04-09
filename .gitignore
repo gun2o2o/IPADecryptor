@@ -1,0 +1,8 @@
+.DS_Store
+.build/
+build/
+.swiftpm/
+vphone/
+frida-ios-dump/
+*.ipa
+.claude/
